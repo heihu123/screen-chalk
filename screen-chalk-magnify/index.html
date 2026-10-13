@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="background: transparent">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScreenChalk</title>
+    <style>
+      /* 防止 WebView2 加载阶段出现默认白底盖住屏幕 */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: transparent !important;
+      }
+    </style>
+  </head>
+  <body style="background: transparent">
+    <div id="root" style="background: transparent"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
